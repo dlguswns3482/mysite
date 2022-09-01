@@ -78,8 +78,13 @@ def vote(request, question_id):
             'error_message' : "You didn't select a choice."
         })
     else:
-        selected_choice.votes += 1
-        selected_choice.save()
+        selected_choice.votes += 
+        
+        
+        
+        
+        
+        
 
         return HttpResponseRedirect(reverse('polls:results', args=(question_id,)))
 
